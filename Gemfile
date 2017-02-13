@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
-  
+
+gem 'thor', '0.19.1'
 gem 'rails', '5.0.1'
 gem 'ruby-mysql'
 gem 'sqlite3'
