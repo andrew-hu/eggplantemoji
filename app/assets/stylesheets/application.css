@@ -42,6 +42,7 @@ body {
 }
 #login_user_status {
     float:right;
+
 }
 
 a img {
@@ -113,3 +114,4 @@ a {
 .error_messages ul {
     margin: 0;
 }
+
