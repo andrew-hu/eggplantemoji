@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170212195811) do
+ActiveRecord::Schema.define(version: 20170226061908) do
+
+  create_table "assets", force: :cascade do |t|
+    t.integer "user_id"
+    t.text    "created_at",  null: false
+    t.text    "updated_at",  null: false
+    t.        "File_upload"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
