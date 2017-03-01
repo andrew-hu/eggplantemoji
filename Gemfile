@@ -21,3 +21,5 @@ gem 'devise'
 
 #for layout and helpers generations
 gem "nifty-generators", :group => :development
+
+gem 'mocha', group: :test
