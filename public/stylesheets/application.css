@@ -1,7 +1,32 @@
 body {
-  background-color: #4B7399;
-  font-family: Verdana, Helvetica, Arial;
+  background-color: #EFEFEF;
+  font-family: "Lucida Grande","Verdana","Arial","Bitstream Vera Sans",sans-serif;
   font-size: 14px;
+}
+
+.header_wrapper {
+  width: 880px;
+  margin: 0 auto;
+  overflow:hidden;
+  padding:20px 0;
+}
+.logo a{
+  color: #338DCF;
+  float: left;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #FFFFFF;
+  text-decoration:none;
+}
+#container {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px #BFBFBF;
+}
+#login_user_status {
+  float:right;
 }
 
 a img {
