@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @asset.user_id %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @asset.file_upload %>
+</p>
+
+<%= link_to 'Edit', edit_asset_path(@asset) %> |
+<%= link_to 'Back', assets_path %>
+
+

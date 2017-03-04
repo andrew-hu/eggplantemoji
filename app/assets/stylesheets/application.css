@@ -13,3 +13,105 @@
  *= require_tree .
  *= require_self
  */
+body {
+    background-color: #EFEFEF;
+    font-family: "Lucida Grande","Verdana","Arial","Bitstream Vera Sans",sans-serif;
+    font-size: 14px;
+}
+
+.header_wrapper {
+    width: 880px;
+    margin: 0 auto;
+    overflow:hidden;
+    padding:20px 0;
+}
+.logo a{
+    color: #338DCF;
+    float: left;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #FFFFFF;
+    text-decoration:none;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 20px 40px;
+    border: solid 1px #BFBFBF;
+}
+#login_user_status {
+    float:right;
+
+}
+
+a img {
+    border: none;
+}
+
+a {
+    color: #0000FF;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+#container {
+    width: 75%;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 20px 40px;
+    border: solid 1px black;
+    margin-top: 20px;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+    padding: 5px 8px;
+    margin: 10px 0;
+}
+
+#flash_notice {
+    background-color: #CFC;
+    border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert {
+    background-color: #FCC;
+    border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+    display: inline;
+}
+
+.error_messages {
+    width: 400px;
+    border: 2px solid #CF0000;
+    padding: 0px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    font-size: 12px;
+}
+
+.error_messages h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 0;
+    background-color: #c00;
+    color: #fff;
+}
+
+.error_messages p {
+    margin: 8px 10px;
+}
+
+.error_messages ul {
+    margin: 0;
+}
+
