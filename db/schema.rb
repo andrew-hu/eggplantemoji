@@ -13,10 +13,11 @@
 ActiveRecord::Schema.define(version: 20170226061908) do
 
   create_table "assets", force: :cascade do |t|
-    t.integer "user_id"
-    t.text    "created_at",  null: false
-    t.text    "updated_at",  null: false
-    t.        "File_upload"
+    t.integer  "user_id"
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|
