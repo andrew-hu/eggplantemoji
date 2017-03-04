@@ -3,9 +3,14 @@ class AssetsController < ApplicationController
 
   # GET /assets
   def index
-    @assets = current_user.assets
+    if user_signed_in? == true
+      @assets = current_user.assets
+    elsif user_signed_in? == false
+      flash[:error1] = "Error. Try signing in or signing up to continue."
+      flash[:error1]
+      redirect_to "http://127.0.0.1:3000/users/sign_in"
+    end
   end
-
   # GET /assets/1
   def show
     @asset = current_user.assets.find(params[:id])
