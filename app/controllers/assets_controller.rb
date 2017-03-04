@@ -64,7 +64,7 @@ class AssetsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_asset
-      @asset = Asset.find(params[:id])
+      current_user.assets.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
