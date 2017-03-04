@@ -13,6 +13,6 @@ class CreateAssets < ActiveRecord::Migration[5.0]
     remove_column :assets, :name, :description
   end
   def down
-    add_column :file, :string
+    add_column :file_upload, :string
   end
 end
