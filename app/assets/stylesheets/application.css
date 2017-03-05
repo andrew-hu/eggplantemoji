@@ -14,8 +14,8 @@
  *= require_self
  */
 body {
-    background-color: #ffffff;
-    font-family: "Lucida Grande","Verdana","Arial","Bitstream Vera Sans",sans-serif;
+    background-color: #fcfcfc;
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
 
@@ -39,12 +39,7 @@ body {
     font-family: 'Fjalla One', sans-serif;
     text-decoration:none;
 }
-#container {
-    width: 800px;
-    margin: 0 auto;
-    background-color: #FFF;
-    padding: 20px 40px;
-}
+
 #login_user_status {
     float:right;
 
@@ -67,7 +62,7 @@ a {
 #container {
     width: 75%;
     margin: 0 auto;
-    background-color: #FFF;
+    background-color: #FCFCFC;
     padding: 20px 40px;
     margin-top: 20px;
 }
