@@ -14,32 +14,32 @@
  *= require_self
  */
 body {
-    background-color: #EFEFEF;
-    font-family: "Lucida Grande","Verdana","Arial","Bitstream Vera Sans",sans-serif;
+    background-color: #fcfcfc;
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
 
 .header_wrapper {
-    width: 880px;
+    width: 80%;
     margin: 0 auto;
     overflow:hidden;
     padding:20px 0;
 }
-.logo a{
-    color: #338DCF;
+.logo_left a{
+    color: #0582ca;
     float: left;
     font-size: 48px;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #FFFFFF;
+    font-family: 'Fjalla One', sans-serif;
     text-decoration:none;
 }
-#container {
-    width: 800px;
-    margin: 0 auto;
-    background-color: #FFF;
-    padding: 20px 40px;
-    border: solid 1px #BFBFBF;
+.logo_right a{
+    color: #ed6a5a;
+    float: left;
+    font-size: 48px;
+    font-family: 'Fjalla One', sans-serif;
+    text-decoration:none;
 }
+
 #login_user_status {
     float:right;
 
@@ -62,9 +62,8 @@ a {
 #container {
     width: 75%;
     margin: 0 auto;
-    background-color: #FFF;
+    background-color: #FCFCFC;
     padding: 20px 40px;
-    border: solid 1px black;
     margin-top: 20px;
 }
 

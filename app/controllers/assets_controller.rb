@@ -3,7 +3,13 @@ class AssetsController < ApplicationController
 
   # GET /assets
   def index
-    @assets = current_user.assets
+    if user_signed_in? == true
+      @assets = current_user.assets
+    elsif user_signed_in? == false
+      flash[:error1] = "Error. Try signing in or signing up to continue."
+      flash[:error1]
+      redirect_to "http://127.0.0.1:3000/users/sign_in"
+    end
   end
 
   # GET /assets/1
@@ -64,7 +70,7 @@ class AssetsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_asset
-      @asset = Asset.find(params[:id])
+      current_user.assets.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
