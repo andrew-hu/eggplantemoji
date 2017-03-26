@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Rails eggplantemoji: test">
+  <database-model serializer="dbm" rdbms="SQLITE" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="3" parent="2" name="sqlite_master"/>
+    <column id="4" parent="3" name="type">
+      <DataType>text|0</DataType>
+    </column>
+    <column id="5" parent="3" name="name">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="6" parent="3" name="tbl_name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="7" parent="3" name="rootpage">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+    </column>
+    <column id="8" parent="3" name="sql">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
