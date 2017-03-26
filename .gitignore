@@ -17,3 +17,9 @@
 .byebug_history
 /Gemfile.lock
 /eggplantemoji_development
+
+# Ignore env file
+/.env
+
+# Ignore IDE files
+/.idea/*
