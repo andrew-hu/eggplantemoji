@@ -17,5 +17,3 @@
 .byebug_history
 /Gemfile.lock
 /eggplantemoji_development
-
-*.env
