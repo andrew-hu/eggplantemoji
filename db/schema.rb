@@ -10,14 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170226061908) do
+ActiveRecord::Schema.define(version: 20170324175146) do
 
   create_table "assets", force: :cascade do |t|
-    t.integer  "user_id"
+    t.integer "user_id"
+    t.text    "name"
+    t.text    "description"
+    t.text    "file_upload"
+    t.text    "created_at",  null: false
+    t.text    "updated_at",  null: false
+  end
+
+  create_table "folders", force: :cascade do |t|
     t.string   "name"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "parent_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
