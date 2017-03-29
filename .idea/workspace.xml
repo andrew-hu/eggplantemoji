@@ -3,15 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0569e09b-0927-4ecf-b4a5-b4b16c02f91b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eggplantemoji_development" afterPath="$PROJECT_DIR$/eggplantemoji_development" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list id="b01ea274-18af-4307-b08f-7635bfdd5843" name="Revert: Delete .env" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <ignored path="$PROJECT_DIR$/vendor/bundle/" />
-    <ignored path=".env" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/eggplantemoji@Development__eggplantemoji.coverage" NAME="Development: eggplantemoji Coverage Results" MODIFIED="1490563142621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="eggplantemoji" />
+    <SUITE FILE_PATH="coverage/eggplantemoji@Development__eggplantemoji.coverage" NAME="Development: eggplantemoji Coverage Results" MODIFIED="1490471191503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="eggplantemoji" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -84,41 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="folders_controller.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="folders_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/folders_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="diagnostics.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="assets_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/assets_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1029">
-              <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="-409">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -159,8 +128,6 @@
         <option value="$PROJECT_DIR$/app/models/folder.rb" />
         <option value="$PROJECT_DIR$/app/views/folders/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/assets_controller.rb" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -198,9 +165,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="RailsProjectView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,7 +220,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="gitignore&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/.gitignore&#10;gitigno&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/.gitignore&#10;homecon&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/controllers/home_controller.rb&#10;user&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/models/user.rb&#10;migration&#9;FILE&#9;file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nifty-generators-0.4.6/rails_generators/nifty_scaffold/templates/migration.rb&#10;create&#9;null&#9;null&#10;folders&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/controllers/folders_controller.rb&#10;GEM&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/Gemfile&#10;FOLDER&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/models/folder.rb&#10;USER&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/models/user.rb&#10;MIGRATION&#9;FILE&#9;file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nifty-generators-0.4.6/rails_generators/nifty_scaffold/templates/migration.rb&#10;users_controller&#9;FILE&#9;file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nifty-generators-0.4.6/rails_generators/nifty_authentication/templates/users_controller.rb&#10;Gemfile&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/Gemfile" />
+    <property name="SearchEverywhereHistoryKey" value="homecon&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/controllers/home_controller.rb&#10;user&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/models/user.rb&#10;migration&#9;FILE&#9;file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nifty-generators-0.4.6/rails_generators/nifty_scaffold/templates/migration.rb&#10;create&#9;null&#9;null&#10;folders&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/controllers/folders_controller.rb&#10;GEM&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/Gemfile&#10;FOLDER&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/models/folder.rb&#10;USER&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/app/models/user.rb&#10;MIGRATION&#9;FILE&#9;file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nifty-generators-0.4.6/rails_generators/nifty_scaffold/templates/migration.rb&#10;users_controller&#9;FILE&#9;file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nifty-generators-0.4.6/rails_generators/nifty_authentication/templates/users_controller.rb&#10;Gemfile&#9;FILE&#9;file://C:/Users/Joel7/RubymineProjects/eggplantemoji/eggplantemoji/Gemfile" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -452,7 +419,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0569e09b-0927-4ecf-b4a5-b4b16c02f91b" name="Default" comment="" />
-      <changelist id="b01ea274-18af-4307-b08f-7635bfdd5843" name="Revert: Delete .env" comment="" />
       <created>1490296225918</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -477,20 +443,12 @@
       <workItem from="1490402695783" duration="995000" />
       <workItem from="1490463952622" duration="4529000" />
       <workItem from="1490468524646" duration="1781000" />
-      <workItem from="1490471190236" duration="2129000" />
-      <workItem from="1490486714852" duration="1511000" />
-      <workItem from="1490489646957" duration="421000" />
-      <workItem from="1490490081254" duration="935000" />
-      <workItem from="1490560651601" duration="276000" />
-      <workItem from="1490560942449" duration="30000" />
-      <workItem from="1490560985035" duration="1923000" />
-      <workItem from="1490563134112" duration="115000" />
-      <workItem from="1490573920315" duration="591000" />
+      <workItem from="1490471190236" duration="410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32257000" />
+    <option name="totallyTimeSpent" value="24736000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,24 +462,24 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37325457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3319012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.49785176" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896176" sideWeight="0.5408163" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46994534" sideWeight="0.15628357" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896176" sideWeight="0.45918366" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.4677766" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46994534" sideWeight="0.84371644" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.72878623" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46994534" sideWeight="0.8179377" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,6 +511,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/models/folder.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/folders_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nifty-generators-0.4.6/rails_generators/nifty_authentication/templates/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/folders/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -841,6 +821,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -900,32 +881,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/folders_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/assets_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="-409">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding />
         </state>
       </provider>
