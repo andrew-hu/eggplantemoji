@@ -2,53 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0569e09b-0927-4ecf-b4a5-b4b16c02f91b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/22ed3c5f-fdff-45d9-b84b-b0d0cd12f942.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/22ed3c5f-fdff-45d9-b84b-b0d0cd12f942/_metadata_/metadata" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/22ed3c5f-fdff-45d9-b84b-b0d0cd12f942/_metadata_/metadata.keystream" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/22ed3c5f-fdff-45d9-b84b-b0d0cd12f942/_metadata_/metadata.keystream.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/22ed3c5f-fdff-45d9-b84b-b0d0cd12f942/_metadata_/metadata.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/22ed3c5f-fdff-45d9-b84b-b0d0cd12f942/_metadata_/metadata.values.at" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/22ed3c5f-fdff-45d9-b84b-b0d0cd12f942/_metadata_/metadata_i" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/22ed3c5f-fdff-45d9-b84b-b0d0cd12f942/_metadata_/metadata_i.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/22ed3c5f-fdff-45d9-b84b-b0d0cd12f942/storage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/6e35b9f8-a503-4a3f-bba8-35a7f2eec833/_metadata_/metadata" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/6e35b9f8-a503-4a3f-bba8-35a7f2eec833/_metadata_/metadata.keystream" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/6e35b9f8-a503-4a3f-bba8-35a7f2eec833/_metadata_/metadata.keystream.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/6e35b9f8-a503-4a3f-bba8-35a7f2eec833/_metadata_/metadata.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/6e35b9f8-a503-4a3f-bba8-35a7f2eec833/_metadata_/metadata.values.at" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/6e35b9f8-a503-4a3f-bba8-35a7f2eec833/_metadata_/metadata_i" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/6e35b9f8-a503-4a3f-bba8-35a7f2eec833/_metadata_/metadata_i.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/b2efb60f-01f1-42fc-8700-38eb2c20ebfd/_metadata_/metadata" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/b2efb60f-01f1-42fc-8700-38eb2c20ebfd/_metadata_/metadata.keystream" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/b2efb60f-01f1-42fc-8700-38eb2c20ebfd/_metadata_/metadata.keystream.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/b2efb60f-01f1-42fc-8700-38eb2c20ebfd/_metadata_/metadata.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/b2efb60f-01f1-42fc-8700-38eb2c20ebfd/_metadata_/metadata.values.at" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/b2efb60f-01f1-42fc-8700-38eb2c20ebfd/_metadata_/metadata_i" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/b2efb60f-01f1-42fc-8700-38eb2c20ebfd/_metadata_/metadata_i.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/deba9b1e-0990-4713-940e-b8f0afd0f88e.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/deba9b1e-0990-4713-940e-b8f0afd0f88e/_metadata_/metadata" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/deba9b1e-0990-4713-940e-b8f0afd0f88e/_metadata_/metadata.keystream" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/deba9b1e-0990-4713-940e-b8f0afd0f88e/_metadata_/metadata.keystream.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/deba9b1e-0990-4713-940e-b8f0afd0f88e/_metadata_/metadata.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/deba9b1e-0990-4713-940e-b8f0afd0f88e/_metadata_/metadata.values.at" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/deba9b1e-0990-4713-940e-b8f0afd0f88e/_metadata_/metadata_i" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/deba9b1e-0990-4713-940e-b8f0afd0f88e/_metadata_/metadata_i.len" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/deba9b1e-0990-4713-940e-b8f0afd0f88e/storage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/eggplantemoji.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__eggplantemoji.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__eggplantemoji.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/spec__eggplantemoji.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test__eggplantemoji.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eggplantemoji_development" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eggplantemoji_development" afterPath="$PROJECT_DIR$/eggplantemoji_development" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="b01ea274-18af-4307-b08f-7635bfdd5843" name="Revert: Delete .env" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -65,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/eggplantemoji@Development__eggplantemoji.coverage" NAME="Development: eggplantemoji Coverage Results" MODIFIED="1490804004383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="eggplantemoji" />
+    <SUITE FILE_PATH="coverage/eggplantemoji@Development__eggplantemoji.coverage" NAME="Development: eggplantemoji Coverage Results" MODIFIED="1490808676774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="eggplantemoji" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -134,8 +90,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="201">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -187,8 +143,8 @@
         <option value="$PROJECT_DIR$/app/views/folders/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/assets_controller.rb" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.git/info/exclude" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -206,9 +162,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1924" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -225,7 +182,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,8 +230,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -521,6 +478,7 @@
       <workItem from="1490581890460" duration="612000" />
       <workItem from="1490597561140" duration="1512000" />
       <workItem from="1490803336882" duration="1217000" />
+      <workItem from="1490808668930" duration="440000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1490574534783</created>
@@ -533,7 +491,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37256000" />
+    <option name="totallyTimeSpent" value="37696000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,14 +503,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4193723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4226638" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.49570355" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46961325" sideWeight="0.20779221" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46448088" sideWeight="0.21106337" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.45918366" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46961325" sideWeight="0.7922078" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46448088" sideWeight="0.7889366" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.7255639" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -969,8 +928,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="201">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
