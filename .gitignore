@@ -18,8 +18,12 @@
 /Gemfile.lock
 /eggplantemoji_development
 
-# Ignore env file
-/.env
-
-# Ignore IDE files
-/.idea/*
+*.env
+.idea/.generators
+.idea/.rakeTasks
+.idea/eggplantemoji.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/misc.xml
+eggplantemoji_development
+.idea/modules.xml
