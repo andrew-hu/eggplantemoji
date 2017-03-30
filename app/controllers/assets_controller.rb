@@ -1,6 +1,5 @@
 class AssetsController < ApplicationController
   before_action :authenticate_user!,:set_asset, only: [:show, :edit, :update, :destroy]
-
   # GET /assets
   def index
     if user_signed_in? == true
@@ -55,14 +54,12 @@ class AssetsController < ApplicationController
 
   # PATCH/PUT /assets/1
   def update
-
     if(params.has_key?(:asset) == false && params.has_key?(:file_upload) == false)
       flash[:error3] = "Error. Please select a file before clicking update."
       flash[:error3]
-      redirect_to "http://127.0.0.1:3000/assets" and return
+      redirect_to "http://127.0.0.1:3000/assets/" and return
     end
     @asset = current_user.assets.find(params[:id])
-
     respond_to do |format|
       if @asset.update(asset_params)
         format.html { redirect_to @asset, notice: 'File was successfully updated.' }
@@ -85,13 +82,13 @@ class AssetsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_asset
-      current_user.assets.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_asset
+    current_user.assets.find(params[:id])
+  end
 
-    # Only allow a trusted parameter "white list" through.
-    def asset_params
-      params.require(:asset).permit(:file_upload)
-    end
+  # Only allow a trusted parameter "white list" through.
+  def asset_params
+    params.require(:asset).permit(:file_upload)
+  end
 end
