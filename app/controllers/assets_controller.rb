@@ -1,9 +1,14 @@
 class AssetsController < ApplicationController
   before_action :authenticate_user!,:set_asset, only: [:show, :edit, :update, :destroy]
-
   # GET /assets
   def index
-    @assets = current_user.assets
+    if user_signed_in? == true
+      @assets = current_user.assets
+    elsif user_signed_in? == false
+      flash[:error1] = "Error. Try signing in or signing up to continue."
+      flash[:error1]
+      redirect_to "http://127.0.0.1:3000/users/sign_in"
+    end
   end
 
   # GET /assets/1
@@ -13,7 +18,13 @@ class AssetsController < ApplicationController
 
   # GET /assets/new
   def new
-    @asset = current_user.assets.new
+    if user_signed_in? == true
+      @asset = current_user.assets.new
+    elsif user_signed_in? == false
+      flash[:error1] = "Error. Try signing in or signing up to continue."
+      flash[:error1]
+      redirect_to "http://127.0.0.1:3000/users/sign_in"
+    end
   end
 
   # GET /assets/1/edit
@@ -23,6 +34,11 @@ class AssetsController < ApplicationController
 
   # POST /assets
   def create
+    if(params.has_key?(:asset) == false && params.has_key?(:file_upload) == false)
+      flash[:error2] = "Error. Please select a file before clicking create."
+      flash[:error2]
+      redirect_to "http://127.0.0.1:3000/assets/new" and return
+    end
     @asset = current_user.assets.new(asset_params)
 
     respond_to do |format|
@@ -38,10 +54,14 @@ class AssetsController < ApplicationController
 
   # PATCH/PUT /assets/1
   def update
+    if(params.has_key?(:asset) == false && params.has_key?(:file_upload) == false)
+      flash[:error3] = "Error. Please select a file before clicking update."
+      flash[:error3]
+      redirect_to "http://127.0.0.1:3000/assets/" and return
+    end
     @asset = current_user.assets.find(params[:id])
-
     respond_to do |format|
-      if @asset.update(pet_params)
+      if @asset.update(asset_params)
         format.html { redirect_to @asset, notice: 'File was successfully updated.' }
         format.json { render :show, status: :ok, location: @asset }
       else
@@ -62,13 +82,13 @@ class AssetsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_asset
-      @asset = Asset.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_asset
+    current_user.assets.find(params[:id])
+  end
 
-    # Only allow a trusted parameter "white list" through.
-    def asset_params
-      params.require(:asset).permit(:file_upload)
-    end
+  # Only allow a trusted parameter "white list" through.
+  def asset_params
+    params.require(:asset).permit(:file_upload)
+  end
 end
