@@ -114,3 +114,27 @@ a {
     margin: 0;
 }
 
+
+
+.folder  {
+    background:url("../images/Folder.png") no-repeat scroll left center transparent;
+}
+
+.file {
+    background:url("../images/file.png") no-repeat scroll left center transparent;
+}
+.folder.asset_details:hover, .shared_folder.asset_details:hover, .file.asset_details:hover  {
+    border:1px solid #DFDFDF;
+}
+.folder.asset_details:hover  {
+    background:url("../images/Folder.png") no-repeat scroll left center #EFEFEF;
+}
+.shared_folder  {
+    background:url("../images/shared_folder.png") no-repeat scroll left center transparent;
+}
+.shared_folder.asset_details:hover  {
+    background:url("../images/shared_folder.png") no-repeat scroll left center #EFEFEF;
+}
+.file.asset_details:hover  {
+    background:url("../images/file.png") no-repeat scroll left center #EFEFEF;
+}

@@ -1,4 +1,4 @@
-<h1>Assets</h1>
+<h1>Asset</h1>
 
 <table>
   <thead>
@@ -9,6 +9,17 @@
   </thead>
 
   <tbody>
+
+  <!-- Listing Folders -->
+  <% @folders.each do |folder| %>
+      <div class="asset_details folder">
+        <div class="file_name"><%= link_to folder.name, folder_path(folder) %></div>
+        <div class="file_size"> - </div>
+        <div class="file_last_updated"> - </div>
+      </div>
+  <% end %>
+
+  <!-- Listing Files -->
     <% @assets.each do |asset| %>
       <tr>
         <td><% file = asset.file_upload.to_s %>
@@ -25,3 +36,5 @@
 <br>
 
 <%= link_to 'New Asset', new_asset_path %>
+<br>
+<%= link_to "New Folder", new_folder_path %>
