@@ -27,3 +27,6 @@
 .idea/misc.xml
 eggplantemoji_development
 .idea/modules.xml
+.idea/runConfigurations/Production__eggplantemoji.xml
+*.xml
+*.xml
