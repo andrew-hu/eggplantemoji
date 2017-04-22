@@ -4,6 +4,9 @@ class AssetsController < ApplicationController
   def index
     if user_signed_in? == true
       @assets = current_user.assets
+
+      #load current_user's folders
+      @folders = current_user.folders.order("name desc")
     elsif user_signed_in? == false
       flash[:error1] = "Error. Try signing in or signing up to continue."
       flash[:error1]

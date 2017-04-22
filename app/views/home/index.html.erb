@@ -4,14 +4,16 @@
 
 <% else %>
 
-    <div class="asset_list_header">
-      <div class="file_name_header">File Name</div>
-      <div class="file_size_header">Size</div>
-      <div class="file_last_updated_header">Modified</div>
-    </div>
     <div class="asset_list">
+      <% @folders.each do |folder| %>
+          <div class="asset_details folder">
+            <div class="file_name"><%= link_to folder.name, folder_path(folder) %></div>
+            <div class="file_size"> - </div>
+            <div class="file_last_updated"> - </div>
+          </div>
+      <% end %>
       <% @assets.each do |asset| %>
-          <div class="asset_details">
+          <div class="asset_details file">
             <div class="file_name"><%= link_to asset.file_name, download_url(asset) %></div>
             <div class="file_size"><%= number_to_human_size(asset.file_size, :precision => 2) %></div>
             <div class="file_last_updated"><%= asset.uploaded_file_updated_at %></div>
