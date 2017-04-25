@@ -4,4 +4,16 @@ class Asset < ApplicationRecord
   def file_size
     uploaded_file_file_size
   end
+
+
+
+  def user_params
+    params.require(:user).permit(:user_id, :uploaded_file, :folder_id)
+  end
+
+
+
+  belongs_to :folder
+
 end
+

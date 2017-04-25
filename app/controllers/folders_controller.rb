@@ -3,6 +3,10 @@ class FoldersController < ApplicationController
   before_filter :authenticate_user!
 
 
+
+
+
+
   # GET /folders
   def index
     @folders = current_user.folders.all
@@ -15,6 +19,15 @@ class FoldersController < ApplicationController
   # GET /folders/new
   def new
     @folder = current_user.folders.new
+    #if there is "folder_id" param, we know that we are under a folder, thus, we will essentially create a subfolder
+    if params[:folder_id] #if we want to create a folder inside another folder
+
+      #we still need to set the @current_folder to make the buttons working fine
+      @current_folder = current_user.folders.find(params[:folder_id])
+
+      #then we make sure the folder we are creating has a parent folder which is the @current_folder
+      @folder.parent_id = @current_folder.id
+    end
   end
 
   # GET /folders/1/edit
@@ -22,6 +35,9 @@ class FoldersController < ApplicationController
   end
 
   # POST /folders
+
+=begin
+
   def create
     @folder = current_user.folders.new(folder_params)
 
@@ -31,6 +47,24 @@ class FoldersController < ApplicationController
       render :new
     end
   end
+
+=end
+  def create
+    @folder = current_user.folders.new(folder_params)
+    if @folder.save
+      flash[:notice] = "Successfully created folder."
+
+      if @folder.parent #checking if we have a parent folder on this one
+        redirect_to browse_path(@folder.parent)  #then we redirect to the parent folder
+      else
+        redirect_to root_url #if not, redirect back to home page
+      end
+    else
+      render :action => 'new'
+    end
+  end
+
+
 
   # PATCH/PUT /folders/1
   def update

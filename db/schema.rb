@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170324175146) do
+ActiveRecord::Schema.define(version: 20170423015818) do
 
   create_table "assets", force: :cascade do |t|
     t.integer "user_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20170324175146) do
     t.text    "file_upload"
     t.text    "created_at",  null: false
     t.text    "updated_at",  null: false
+    t.integer "folder_id"
   end
 
   create_table "folders", force: :cascade do |t|
