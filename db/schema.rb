@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170423015818) do
     t.text    "created_at",  null: false
     t.text    "updated_at",  null: false
     t.integer "folder_id"
+    t.index ["folder_id"], name: "index_assets_on_folder_id"
   end
 
   create_table "folders", force: :cascade do |t|
