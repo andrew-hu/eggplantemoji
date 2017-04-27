@@ -5,7 +5,6 @@
 <% else %>
 
 
-
     <div class="asset_list">
       <%= render :partial => "breadcrumbs" %>
 
@@ -15,18 +14,43 @@
 
           <div class="asset_details folder">
 
-            <div class="file_name"><%= link_to folder.name, folder_path(folder) %></div>
+            <div class="file_name"><%= link_to folder.name, browse_path(folder) %></div>
             <div class="file_size"> - </div>
             <div class="file_last_updated"> - </div>
+
+            <td><%= link_to 'Show', folder %></td>
+            &nbsp
+            <td><%= link_to 'Edit', edit_folder_path(folder) %></td>
+            &nbsp
+            <td><%= link_to 'Destroy', folder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+            <p> </p>
           </div>
       <% end %>
 
-      <% if @current_folder %>
-          <li><%= link_to "New Folder", new_sub_folder_path(@current_folder) %></li>
-      <% else %>
-          <li><%= link_to "New Folder", new_folder_path %></li>
-      <% end %>
+
+
+
+
+
+
+
+      <ul id= "top_menu">
+
+        <% if @current_folder %>
+            <li><%= link_to "Upload", new_sub_file_path(@current_folder) %></li>
+            <li><%= link_to "New Folder", new_sub_folder_path(@current_folder) %></li>
+        <% else %>
+            <li><%= link_to "Upload", new_asset_path %></li>
+            <li><%= link_to "New Folder", new_folder_path %></li>
+        <% end %>
+      </ul>
 
 
     </div>
+
+
+
+
+
 <% end %>
