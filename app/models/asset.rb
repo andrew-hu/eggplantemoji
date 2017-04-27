@@ -12,6 +12,9 @@ class Asset < ApplicationRecord
   end
 
 
+  #need to be fixed
+  #attr_accessible :user_id, :uploaded_file, :folder_id
+
 
   belongs_to :folder
 
