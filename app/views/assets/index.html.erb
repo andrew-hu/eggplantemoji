@@ -10,18 +10,7 @@
 
   <tbody>
 
-  <!-- Listing Folders -->
-  <% @folders.each do |folder| %>
-      <div class="asset_details folder">
-
-        <div class="file_name"><%= link_to folder.name, browse_path(folder) %></div>
-        <div class="file_size"> - </div>
-        <div class="file_last_updated"> - </div>
-
-
-
-      </div>
-  <% end %>
+  
 
   <!-- Listing Files -->
   <% @assets.each do |asset| %>
