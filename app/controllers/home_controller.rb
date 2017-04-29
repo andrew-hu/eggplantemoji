@@ -5,7 +5,7 @@ class HomeController < ApplicationController
       @folders = current_user.folders.roots
 
       #show only root files which has no "folder_id"
-      @assets = current_user.assets.where("folder_id is NULL").order("uploaded_file_file_name desc")
+      @assets = current_user.assets.where("folder_id is NULL").order("name")
     end
   end
 
@@ -26,8 +26,8 @@ class HomeController < ApplicationController
 
 
       #show only files under this current folder
-      @assets = @current_folder.assets.order("uploaded_file_file_name desc")
-
+      #@assets = @current_folder.assets.order("uploaded_file_file_name desc")
+      @assets = @current_folder.assets.order("name") #test line
       render :action => "index"
     else
       flash[:error] = "Don't be cheeky! Mind your own folders!"

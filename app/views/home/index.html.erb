@@ -7,7 +7,11 @@
 
     <div class="asset_list">
       <%= render :partial => "breadcrumbs" %>
-
+      <div class="asset_list_header">
+        <div class="file_name_header">File Name</div>
+        <div class="file_size_header">Size</div>
+        <div class="file_last_updated_header">Modified</div>
+      </div>
       <% @folders.each do |folder| %>
 
 
@@ -30,7 +34,26 @@
 
 
 
+      <!-- Listing Files -->
+      <% @assets.each do |asset| %>
+          <div class="asset_details file">
 
+            <div class="file_name"><% file = asset.file_upload.to_s %>
+              <%= File.basename(file,File.extname(file)).capitalize %>
+             <%= File.extname(file).delete('.').upcase%></div>
+
+            <div class="file_size"> - </div>
+            <div class="file_last_updated"> - </div>
+
+            <td><%= link_to 'Show', asset %></td>
+            &nbsp
+            <td><%= link_to 'Edit', edit_asset_path(asset) %></td>
+            &nbsp
+            <td><%= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+          </div>
+      <% end %>
 
 
 
