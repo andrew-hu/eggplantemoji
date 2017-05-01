@@ -7,8 +7,8 @@ class Asset < ApplicationRecord
 
 
 
-  def user_params
-    params.require(:user).permit(:user_id, :uploaded_file, :folder_id)
+  def asset_params
+    params.require(:asset).permit(:user_id, :uploaded_file, :folder_id)
   end
 
 
