@@ -23,12 +23,10 @@ class AssetsController < ApplicationController
 
 
   def new
-    if user_signed_in? == true
-      @asset = current_user.assets.new
-    elsif user_signed_in? == false
-      flash[:error1] = "Error. Try signing in or signing up to continue."
-      flash[:error1]
-      redirect_to "http://127.0.0.1:3000/users/sign_in"
+    @asset = current_user.assets.build
+    if params[:folder_id] #if we want to upload a file inside another folder
+      @current_folder = current_user.folders.find(params[:folder_id])
+      @asset.folder_id = @current_folder.id
     end
   end
 
@@ -93,10 +91,12 @@ class AssetsController < ApplicationController
   def set_asset
     current_user.assets.find(params[:id])
   end
-
   # Only allow a trusted parameter "white list" through.
   def asset_params
-    params.require(:asset).permit(:file_upload)
+    params.require(:asset).permit(:user_id, :file_upload, :folder_id)
   end
+
+
 end
+
 

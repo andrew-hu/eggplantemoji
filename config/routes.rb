@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :assets
 
 
+
+
   #for creating folders insiide another folder
   match "browse/:folder_id/new_folder" => "folders#new", :as => "new_sub_folder" , :via => [:get, :post]
 
