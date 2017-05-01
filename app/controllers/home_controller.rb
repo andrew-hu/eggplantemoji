@@ -6,6 +6,8 @@ class HomeController < ApplicationController
 
       #show only root files which has no "folder_id"
       @assets = current_user.assets.where("folder_id is NULL").order("name")
+    else
+      render :layout => false
     end
   end
 

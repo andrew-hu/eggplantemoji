@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= favicon_link_tag %>
     <title><%= content_for?(:title) ? yield(:title) : "SHARESPACE" %></title>
     <%= stylesheet_link_tag :application %>
     <%= javascript_include_tag :application %>
@@ -8,7 +9,8 @@
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
-  <body>
+  <% unless user_signed_in? %>
+    <body>
     <div class="header_wrapper">
       <div class="logo_left">
         <%= link_to "SHARE", root_url %>
@@ -38,4 +40,5 @@
       <%= yield %>
     </div>
   </body>
+    <% end %>
 </html>

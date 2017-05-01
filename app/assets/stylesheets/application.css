@@ -14,8 +14,6 @@
  *= require_self
  */
 
-
-
 .breadcrumbs {
     margin:10px 0;
     font-weight:bold;
@@ -40,6 +38,12 @@ body {
     margin: 0 auto;
     overflow:hidden;
     padding:20px 0;
+}
+a:hover.logo_left{
+    background-color: transparent;
+}
+a:hover.logo_right{
+    background-color: transparent;
 }
 .logo_left a{
     color: #0582ca;
