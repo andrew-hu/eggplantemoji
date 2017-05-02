@@ -37,25 +37,23 @@ class AssetsController < ApplicationController
 
   # POST /assets
 
-  def create
-    if(params.has_key?(:asset) == false && params.has_key?(:file_upload) == false)
-      flash[:error2] = "Error. Please select a file before clicking create."
-      flash[:error2]
-      redirect_to "http://127.0.0.1:3000/assets/new" and return
-    end
-    @asset = current_user.assets.new(asset_params)
 
-    respond_to do |format|
-      if @asset.save
-        format.html { redirect_to @asset, notice: 'File was successfully uploaded.' }
-        format.json { render :show, status: :created, location: @asset }
+
+  def create
+
+    @asset = current_user.assets.build(asset_params)
+    if @asset.save
+      flash[:notice] = "Successfully uploaded the file."
+
+      if @asset.folder #checking if we have a parent folder for this file
+        redirect_to browse_path(@asset.folder)  #then we redirect to the parent folder
       else
-        format.html { render :new }
-        format.json { render json: @asser.errors, status: :unprocessable_entity }
+        redirect_to root_url
       end
+    else
+      render :action => 'new'
     end
   end
-
 
   # PATCH/PUT /assets/1
   def update
