@@ -9,8 +9,7 @@
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
-  <% unless user_signed_in? %>
-    <body>
+  <body>
     <div class="header_wrapper">
       <div class="logo_left">
         <%= link_to "SHARE", root_url %>
@@ -40,5 +39,4 @@
       <%= yield %>
     </div>
   </body>
-    <% end %>
 </html>
