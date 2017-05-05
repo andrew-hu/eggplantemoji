@@ -9,7 +9,7 @@ body {
 }
 
 body, p, ol, ul, td {
-  font-family: 'Lato',verdana, arial, helvetica, sans-serif;
+  font-family: 'Lato', helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
@@ -22,16 +22,14 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #0582ca
 }
 
 a:visited {
-  color: #666;
 }
 
 a:hover {
-  color: #fff;
-  background-color: #000;
+  background-color: transparent;
 }
 
 th {
@@ -100,7 +98,7 @@ label {
     height: 100%;
 }
 .full-screen-image-body{
-    font-family: 'Lato',verdana, arial, helvetica, sans-serif;
+    font-family: 'Lato', helvetica, sans-serif;
     background-color: #FFFFFF;
     margin: 0;
     padding: 0;
@@ -123,13 +121,13 @@ label {
     max-height: 100px;
 }
 h1.splash-message{
-    font-family: 'lato',verdana, arial, helvetica, sans-serif;
+    font-family: 'Lato', helvetica, sans-serif;
     font-size: 70px;
     color: #FFFFFF;
     line-height: 35px;
 }
 h3.splash-message{
-    font-family: 'lato',verdana, arial, helvetica, sans-serif;
+    font-family: 'Lato', helvetica, sans-serif;
     font-size: 50px;
     color: #FFFFFF;
     line-height: 25px;
@@ -189,5 +187,5 @@ a.splash-log-in{
     color: #FFFFFF;
     float: right;
     font-size: large;
-    font-family: 'lato', verdana, arial, helvetica, sans-serif;
+    font-family: 'Lato', helvetica, sans-serif;
 }

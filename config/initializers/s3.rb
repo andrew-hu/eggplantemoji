@@ -10,7 +10,7 @@ CarrierWave.configure do |config|
       :aws_secret_access_key  => ENV['S3_SECRET'],
       :region                 => 'us-west-2' # Change this for different AWS region. Default is 'us-east-1'
   }
-  config.fog_directory  = 'elasticbeanstalk-us-west-2-961324297475'
+  config.fog_directory  = 'cmpe131'
 end
 # To enable root element in JSON for ActiveRecord objects.
 # ActiveSupport.on_load(:active_record) do

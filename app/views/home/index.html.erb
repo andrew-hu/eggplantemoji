@@ -19,7 +19,12 @@
           <div class="logo_right">
             <%= link_to 'SPACE', root_url%><!--#Link to needs to be changed-->
           </div>
-          <%= link_to "Log In", new_user_session_url, class: "splash-log-in" %>
+          <div class="splash-log-in">
+            <% flash.each do |key, value| %>
+                <%= content_tag :div, value, class: "flash #{key}" %>
+            <% end %>
+            <%= link_to "Log In", new_user_session_url, class:"splash-log-in" %>
+          </div>
         </div>
         <div style="min-height: 100%;
             background-color: #FFFFFF; background-position: center 50%;
