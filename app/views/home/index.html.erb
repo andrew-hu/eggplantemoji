@@ -55,7 +55,6 @@
       <% @folders.each do |folder| %>
 
 
-
           <div class="asset_details folder">
 
             <div class="file_name"><%= link_to folder.name, browse_path(folder) %></div>
@@ -73,17 +72,16 @@
       <% end %>
 
 
-
       <!-- Listing Files -->
       <% @assets.each do |asset| %>
           <div class="asset_details file">
 
             <div class="file_name"><% file = asset.file_upload.to_s %>
               <%= File.basename(file,File.extname(file)).capitalize %>
-             <%= File.extname(file).delete('.').upcase%></div>
+             <%= #File.extname(file).delete('.').upcase%></div>
 
             <div class="file_size"> - </div>
-            <div class="file_last_updated"> - </div>
+            <div class="file_last_updated"> <%= asset.updated_at %> </div>
 
             <td><%= link_to 'Show', asset %></td>
             &nbsp
@@ -94,26 +92,5 @@
 
           </div>
       <% end %>
-
-
-
-
-      <ul id= "top_menu">
-
-        <% if @current_folder %>
-            <li><%= link_to "Upload", new_sub_file_path(@current_folder) %></li>
-            <li><%= link_to "New Folder", new_sub_folder_path(@current_folder) %></li>
-        <% else %>
-            <li><%= link_to "Upload", new_asset_path %></li>
-            <li><%= link_to "New Folder", new_folder_path %></li>
-        <% end %>
-      </ul>
-
-
     </div>
-
-
-
-
-
 <% end %>

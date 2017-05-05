@@ -17,6 +17,7 @@
 .breadcrumbs {
     margin:10px 0;
     font-weight:bold;
+    font-size: 18px;
 }
 .breadcrumbs a {
     color:#1D96EF;
