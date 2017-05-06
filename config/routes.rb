@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   #for uploading files to folders
   match "browse/:folder_id/new_file" => "assets#new", :as => "new_sub_file" , :via => [:get, :post]
 
-  match "browse/:folder_id" => "home#browse", :as => "browse" , :via => [:get, :post]
+  match "browse/:folder_id" => "assets#browse", :as => "browse" , :via => [:get, :post]
 
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
