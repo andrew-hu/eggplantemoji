@@ -16,8 +16,8 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   authenticated :user do
-   # root 'assets#index', as: :authenticated_root <- this is causing our homepage disappearing
-    root 'home#index', as: :authenticated_root
+    root 'assets#index', as: :authenticated_root # <- this is causing our homepage disappearing
+    #root 'home#index', as: :authenticated_root
   end
     root :to => "home#index"
   devise_scope :user do  

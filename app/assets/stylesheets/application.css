@@ -84,6 +84,7 @@ a {
     width: 90%;
     background-color: #FCFCFC;
     padding-left: 40px;
+    min-height: 200px;
 }
 
 #flash_notice, #flash_error, #flash_alert {
@@ -144,8 +145,8 @@ a {
     font-weight:bold;
     font-size:18px;
     overflow:hidden;
-
 }
+
 .file_name_header, .file_name {
     width:40%;
     float:left;
@@ -160,6 +161,7 @@ a {
 }
 .asset_list {
     padding: 0;
+    min-height: 200px;
 }
 .asset_details {
     font-weight:normal;
