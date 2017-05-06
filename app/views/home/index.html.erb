@@ -69,8 +69,6 @@
             &nbsp
             <div class="file_manipulate"><%= link_to 'Edit', edit_folder_path(folder) %></div>
             &nbsp
-            <div class="file_manipulate"><%= link_to 'Share'%></div>
-            &nbsp
             <div class="file_manipulate"><%= link_to 'Destroy', folder, method: :delete, data: { confirm: 'Are you sure?' } %></div>
           </div>
       <% end %>
@@ -90,8 +88,6 @@
             <div class="file_manipulate"><%= link_to 'Show', asset %></div>
             &nbsp
             <div class="file_manipulate"><%= link_to 'Edit', edit_asset_path(asset) %></div>
-            &nbsp
-            <div class="file_manipulate"><a href="<%=  asset.file_upload.url %>" download>Download</a></div>
             &nbsp
             <div class="file_manipulate"><%= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></div>
 
