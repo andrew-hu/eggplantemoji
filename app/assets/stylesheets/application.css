@@ -17,6 +17,7 @@
 .breadcrumbs {
     margin:10px 0;
     font-weight:bold;
+    font-size: 18px;
 }
 .breadcrumbs a {
     color:#1D96EF;
@@ -26,7 +27,7 @@
 
 body {
     background-color: #fcfcfc;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -34,7 +35,7 @@ body {
 
 
 .header_wrapper {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     overflow:hidden;
     padding:20px 0;
@@ -80,11 +81,10 @@ a {
 }
 
 #container {
-    width: 75%;
-    margin: 0 auto;
+    width: 90%;
     background-color: #FCFCFC;
-    padding: 20px 40px;
-    margin-top: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
 #flash_notice, #flash_error, #flash_alert {
@@ -93,13 +93,15 @@ a {
 }
 
 #flash_notice {
-    background-color: #CFC;
-    border: solid 1px #6C6;
+    background-color: transparent;
+    color: #3dcc4a;
+    text-shadow: #FCFCFC;
 }
 
 #flash_error, #flash_alert {
-    background-color: #FCC;
-    border: solid 1px #C66;
+    background-color: transparent;
+    color: #C66;
+    text-shadow: #fcfcfc;
 }
 
 .fieldWithErrors {
@@ -136,48 +138,27 @@ a {
 
 
 
-.folder  {
-    background:url("../images/Folder.png") no-repeat scroll left center transparent;
-}
-
-.file {
-    background:url("../images/file.png") no-repeat scroll left center transparent;
-}
 .folder.asset_details:hover, .shared_folder.asset_details:hover, .file.asset_details:hover  {
     border:1px solid #DFDFDF;
 }
-.folder.asset_details:hover  {
-    background:url("../images/Folder.png") no-repeat scroll left center #EFEFEF;
-}
-.shared_folder  {
-    background:url("../images/shared_folder.png") no-repeat scroll left center transparent;
-}
-.shared_folder.asset_details:hover  {
-    background:url("../images/shared_folder.png") no-repeat scroll left center #EFEFEF;
-}
-.file.asset_details:hover  {
-    background:url("../images/file.png") no-repeat scroll left center #EFEFEF;
-}
-
 
 .asset_list_header, .asset_list, .asset_details {
-    width:800px;
+    width:100%;
     font-weight:bold;
     font-size:12px;
     overflow:hidden;
 
 }
 .file_name_header, .file_name {
-    width:350px;
+    width:40%;
     float:left;
-    padding-left:20px;
 }
 .file_size_header, .file_size {
-    width:100px;
+    width: 5%;
     float:left;
 }
 .file_last_updated_header, .file_last_updated {
-    width:150px;
+    width: 28%;
     float:left;
 }
 .asset_list {
@@ -188,7 +169,7 @@ a {
     height:25px;
     line-height:25px;
     border:1px solid #FFF;
-    width:790px;
+    width:100%;
     color:#4F4F4F;
 }
 
@@ -196,4 +177,20 @@ a {
     text-decoration:none;
     color:#1D96EF;
     font-size:12px;
+}
+
+.file_icon_header, .file_icon {
+    width: 2%;
+    float: left;
+    min-width: 2%;
+}
+
+.file_manipulate_header, .file_manipulate{
+    width: 5%;
+    float: left;
+}
+
+.file_manipulate a:hover{
+    background-color: #cccccc;
+    border:1px solid #d7d7d7;
 }
