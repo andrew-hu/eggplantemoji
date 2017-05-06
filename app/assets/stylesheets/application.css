@@ -84,7 +84,6 @@ a {
     width: 90%;
     background-color: #FCFCFC;
     padding-left: 40px;
-    padding-top: 20px;
 }
 
 #flash_notice, #flash_error, #flash_alert {
@@ -110,11 +109,9 @@ a {
 
 .error_messages {
     width: 400px;
-    border: 2px solid #CF0000;
     padding: 0px;
     padding-bottom: 12px;
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
+    margin-bottom: 10px;
     font-size: 12px;
 }
 
@@ -124,8 +121,7 @@ a {
     padding: 5px 10px;
     font-size: 12px;
     margin: 0;
-    background-color: #c00;
-    color: #fff;
+    color: #CF0000;
 }
 
 .error_messages p {
@@ -140,12 +136,13 @@ a {
 
 .folder.asset_details:hover, .shared_folder.asset_details:hover, .file.asset_details:hover  {
     border:1px solid #DFDFDF;
+    background-color: #e7e7f5;
 }
 
 .asset_list_header, .asset_list, .asset_details {
     width:100%;
     font-weight:bold;
-    font-size:12px;
+    font-size:18px;
     overflow:hidden;
 
 }
@@ -162,13 +159,14 @@ a {
     float:left;
 }
 .asset_list {
-    padding:20px 0;
+    padding: 0;
 }
 .asset_details {
     font-weight:normal;
-    height:25px;
-    line-height:25px;
+    height:40px;
+    line-height:40px;
     border:1px solid #FFF;
+    background-color: #f8f8f8;
     width:100%;
     color:#4F4F4F;
 }
@@ -176,7 +174,7 @@ a {
 .asset_details a, .asset_details a:visited {
     text-decoration:none;
     color:#1D96EF;
-    font-size:12px;
+    font-size:18px;
 }
 
 .file_icon_header, .file_icon {
@@ -184,13 +182,25 @@ a {
     float: left;
     min-width: 2%;
 }
-
-.file_manipulate_header, .file_manipulate{
-    width: 5%;
-    float: left;
+image.file_icon{
+    vertical-align: middle;
+    margin: auto auto;
 }
 
-.file_manipulate a:hover{
-    background-color: #cccccc;
+.file_manipulate_header, .file_manipulate{
+    text-decoration: none;
+    width: 5%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a:hover div.file_manipulate{
+    background-color: #e3e3f1;
     border:1px solid #d7d7d7;
+}
+
+a div.file_manipulate{
+    border:1px solid transparent;
 }
