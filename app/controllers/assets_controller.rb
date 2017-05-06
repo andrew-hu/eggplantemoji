@@ -3,10 +3,11 @@ class AssetsController < ApplicationController
   # GET /assets
   def index
     if user_signed_in? == true
-      @assets = current_user.assets
+      #show only root folders (which have no parent folders)
+      @folders = current_user.folders.roots
 
-      #load current_user's folders
-      @folders = current_user.folders.order("name desc")
+      #show only root files which has no "folder_id"
+      @assets = current_user.assets.where("folder_id is NULL").order("name")
     elsif user_signed_in? == false
       flash[:error1] = "Error. Try signing in or signing up to continue."
       flash[:error1]
