@@ -148,7 +148,7 @@ a {
 }
 
 .file_name_header, .file_name {
-    width:40%;
+    width:30%;
     float:left;
 }
 .file_size_header, .file_size {
@@ -191,7 +191,8 @@ image.file_icon{
 
 .file_manipulate_header, .file_manipulate{
     text-decoration: none;
-    width: 5%;
+    min-width: 5%;
+    margin: 0px 5px;
     height: 100%;
     float: left;
     text-align: center;

@@ -1,95 +1,44 @@
-<% unless user_signed_in? %>
-  <!DOCTYPE html>
-    <html>
-    <head>
-      <%= favicon_link_tag %>
-      <title><%= content_for?(:title) ? yield(:title) : "SHARESPACE" %></title>
-      <%= stylesheet_link_tag :application %>
-      <%= javascript_include_tag :application %>
-      <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato" rel="stylesheet">
-      <%= csrf_meta_tag %>
-      <%= yield(:head) %>
-    </head>
-    <body class="full-screen-image-body">
-      <div class="full-page">
-        <div class="splash-header_wrapper">
-          <div class="logo_left">
-            <%= link_to 'SHARE', root_url %>
-          </div>
-          <div class="logo_right">
-            <%= link_to 'SPACE', root_url%><!--#Link to needs to be changed-->
-          </div>
-          <div class="splash-log-in">
-            <% flash.each do |key, value| %>
-                <%= content_tag :div, value, class: "flash #{key}" %>
-            <% end %>
-            <%= link_to "Log In", new_user_session_url, class:"splash-log-in" %>
-          </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= favicon_link_tag %>
+    <title><%= content_for?(:title) ? yield(:title) : "SHARESPACE" %></title>
+    <%= stylesheet_link_tag :application %>
+    <%= javascript_include_tag :application %>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato" rel="stylesheet">
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+  <body class="full-screen-image-body">
+    <div class="full-page">
+      <div class="splash-header_wrapper">
+        <div class="logo_left">
+          <%= link_to 'SHARE', root_url %>
         </div>
-        <div style="min-height: 100%;
-            background-color: #FFFFFF; background-position: center 50%;
-            background-repeat: no-repeat; display: block;
-            background-image: url('../images/splash-background.jpg');background-size: cover;">
+        <div class="logo_right">
+          <%= link_to 'SPACE', root_url%><!--#Link to needs to be changed-->
         </div>
-        <div class="style section-centered section-vertical-align">
-          <div>
-            <img class="logo_image" src="/images/folder-logo.png">
-            <h1 class="splash-message">Universal File Storage</h1>
-            <h3 class="splash-message">Fast, Simple, Secure.</h3>
-            <br>
-            <%= link_to "Get Started On ShareSpace",new_user_registration_path, class: "splash-page-button" %>
-          </div>
+        <div class="splash-log-in">
+          <% flash.each do |key, value| %>
+              <%= content_tag :div, value, class: "flash #{key}" %>
+          <% end %>
+          <%= link_to "Log In", new_user_session_url, class:"splash-log-in" %>
         </div>
       </div>
-    </body>
-
-<% else %>
-
-  <div class="asset_list">
-    <%= render :partial => "breadcrumbs" %>
-    <div class="asset_list_header">
-      <div class="file_icon_header">&nbsp;</div>
-      <div class="file_name_header">File Name</div>
-      <div class="file_size_header">Size</div>
-      <div class="file_last_updated_header">Modified</div>
-      <div class="file_manipulate_header">&nbsp;</div>
-      <div class="file_manipulate_header">&nbsp;</div>
-      <div class="file_manipulate_header">&nbsp;</div>
+      <div style="min-height: 100%;
+          background-color: #FFFFFF; background-position: center 50%;
+          background-repeat: no-repeat; display: block;
+          background-image: url('../images/splash-background.jpg');background-size: cover;">
+      </div>
+      <div class="style section-centered section-vertical-align">
+        <div>
+          <img class="logo_image" src="/images/folder-logo.png">
+          <h1 class="splash-message">Universal File Storage</h1>
+          <h3 class="splash-message">Fast, Simple, Secure.</h3>
+          <br>
+          <%= link_to "Get Started On ShareSpace",new_user_registration_path, class: "splash-page-button" %>
+        </div>
+      </div>
     </div>
-    <% @folders.each do |folder| %>
-      <div class="asset_details folder">
-        <div class="file_icon"><img src="/images/folder.png" width="20px" height="20 px" style="vertical-align: middle"></div>
-        <div class="file_name"><%= link_to folder.name, browse_path(folder) %></div>
-        <div class="file_size"> - </div>
-        <div class="file_last_updated"> - </div>
-
-        <%= link_to folder do %><div class="file_manipulate">Show</div><%end%>
-        &nbsp
-        <%= link_to edit_folder_path(folder) do %><div class="file_manipulate">Edit</div><% end %>
-        &nbsp
-        <%= link_to folder, method: :delete, data: { confirm: 'Are you sure?' } do %><div class="file_manipulate">Delete</div><% end %>
-      </div>
-    <% end %>
-
-
-    <!-- Listing Files -->
-    <% @assets.each do |asset| %>
-      <div class="asset_details file">
-        <div class="file_icon"><img src="/images/blue-file.png" width="15 px" height="20 px" style="vertical-align: middle" ></div>
-        <div class="file_name"><% file = asset.file_upload.to_s %>
-          <%= File.basename(file,File.extname(file)).capitalize %>
-        </div>
-
-        <div class="file_size"> - </div>
-        <div class="file_last_updated"> <%= asset.updated_at %> </div>
-
-        <%= link_to asset do %><div class="file_manipulate">Show</div><% end %>
-        &nbsp
-        <%= link_to edit_asset_path(asset) do %><div class="file_manipulate">Edit</div><% end %>
-        &nbsp
-        <%= link_to asset, method: :delete, data: { confirm: 'Are you sure?' } do %><div class="file_manipulate">Destroy</div><% end %>
-        </div>
-    <% end %>
-  </div>
-
-<% end %>
+  </body>
+</html>
