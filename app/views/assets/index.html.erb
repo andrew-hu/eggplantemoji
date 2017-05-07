@@ -10,8 +10,8 @@
     <div class="file_manipulate_header">&nbsp;</div>
   </div>
   <% @folders.each do |folder| %>
-      <div class="asset_details folder">
-        <div class="file_icon"><img src="/images/folder.png" width="20px" height="20 px" style="vertical-align: middle"></div>
+      <div class="asset_details <%= folder.shared? ? 'shared_folder' : 'folder' %>" id="folder_<%= folder.id %>">
+      <div class="file_icon"><img src="/images/folder.png" width="20px" height="20 px" style="vertical-align: middle"></div>
         <div class="file_name"><%= link_to folder.name, browse_path(folder) %></div>
         <div class="file_size"> - </div>
         <div class="file_last_updated"> - </div>
@@ -19,6 +19,8 @@
         <%= link_to folder do %><div class="file_manipulate">Show</div><%end%>
         &nbsp
         <%= link_to edit_folder_path(folder) do %><div class="file_manipulate">Edit</div><% end %>
+        &nbsp
+        <%= link_to "Share", "#", :folder_id => folder.id, :folder_name => folder.name %>
         &nbsp
         <%= link_to folder, method: :delete, data: { confirm: 'Are you sure?' } do %><div class="file_manipulate">Delete</div><% end %>
       </div>
@@ -43,6 +45,18 @@
         <a href="<%=  asset.file_upload.url %>" download> <div class="file_manipulate">Download</div></a>
         &nbsp
         <%= link_to asset, method: :delete, data: { confirm: 'Are you sure?' } do %><div class="file_manipulate">Destroy</div><% end %>
+      </div>
+
+
+      <div id="invitation_form" title="Invite others to share" style="display:none">
+        <% form_tag '/home/share' do -%>
+            <label for="email_addresses">Enter recipient email addresses here</label><br />
+            <%= text_field_tag 'email_addresses', "", :class => 'text ui-widget-content ui-corner-all'%>
+            <br /><br />
+            <label for="message">Optional message</label><br />
+            <%= text_area_tag 'message',"",  :class => 'text ui-widget-content ui-corner-all'%>
+            <%= hidden_field_tag "folder_id" %>
+        <% end -%>
       </div>
   <% end %>
 </div>

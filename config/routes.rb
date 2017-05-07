@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
 
 
-
+#for sharing the folder
+  match "assets/share" => "assets#share", via: [:get, :post]
+  match "home/share" => "assets#share", via: [:get, :post]
   #for creating folders insiide another folder
   match "browse/:folder_id/new_folder" => "folders#new", :as => "new_sub_folder" , :via => [:get, :post]
 
