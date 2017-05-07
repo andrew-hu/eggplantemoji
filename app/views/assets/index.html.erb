@@ -1,27 +1,58 @@
-<p id="notice"><%= notice %></p>
+<div class="asset_list">
+  <%= render :partial => "breadcrumbs" %>
+  <div class="asset_list_header">
+    <div class="file_icon_header">&nbsp;</div>
+    <div class="file_name_header">File Name</div>
+    <div class="file_size_header">Size</div>
+    <div class="file_last_updated_header">Modified</div>
+    <div class="file_manipulate_header">&nbsp;</div>
+    <div class="file_manipulate_header">&nbsp;</div>
+    <div class="file_manipulate_header">&nbsp;</div>
+  </div>
+  <% @folders.each do |folder| %>
+    <div class="asset_details folder">
+      <div class="file_icon"><img src="/images/folder.png" width="20px" height="20 px" style="vertical-align: middle"></div>
+      <div class="file_name"><%= link_to folder.name, browse_path(folder) %></div>
+      <div class="file_size"> - </div>
+      <div class="file_last_updated"> - </div>
 
-<h1>Assets</h1>
+      <%= link_to folder do %><div class="file_manipulate">Show</div><%end%>
+      &nbsp
+      <%= link_to edit_folder_path(folder) do %><div class="file_manipulate">Edit</div><% end %>
+      &nbsp
+      <%= link_to folder, method: :delete, data: { confirm: 'Are you sure?' } do %><div class="file_manipulate">Delete</div><% end %>
+    </div>
+  <% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th><%= current_user.name %></th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @assets.each do |asset| %>
-      <tr>
-        <td><%= asset.user_id %></td>
-        <td><%= link_to 'Show', asset %></td>
-        <td><%= link_to 'Edit', edit_asset_path(asset) %></td>
-        <td><%= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <!-- Listing Files -->
+  <% @assets.each do |asset| %>
+    <div class="asset_details file">
+      <div class="file_icon">
+        <% if asset.content_type.include? 'image' %>
+          <%= image_tag asset.file_upload.thumb_small %>
+        <% else %>
+          <img src="/images/blue-file.png" width="15 px" height="20 px" style="vertical-align: middle" >
+        <%end%>
+      </div>
+      <div class="file_name"><% file = asset.file_upload.to_s %>
+        <%= File.basename(file,File.extname(file)).capitalize %>
+      </div>
 
-<br>
+      <% if asset.file_size %>
+          <div class="file_size"> <%= number_to_human_size(asset.file_size) %> </div>
+      <% else %>
+          <div class="file_size"> - </div>
+      <% end %>
+      <div class="file_last_updated"> <%= asset.updated_at %> </div>
 
-<%= link_to 'New Asset', new_asset_path %>
+      <%= link_to asset do %><div class="file_manipulate">Show</div><% end %>
+      &nbsp
+      <%= link_to edit_asset_path(asset) do %><div class="file_manipulate">Edit</div><% end %>
+      &nbsp
+      <a href="<%=  asset.file_upload.url %>" download> <div class="file_manipulate">Download</div></a>
+      &nbsp
+      <%= link_to asset, method: :delete, data: { confirm: 'Are you sure?' } do %><div class="file_manipulate">Delete</div><% end %>
+    </div>
+  <% end %>
+</div>

@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <%= favicon_link_tag %>
+    <title><%= content_for?(:title) ? yield(:title) : "SHARESPACE" %></title>
     <%= stylesheet_link_tag :application %>
     <%= javascript_include_tag :application %>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato" rel="stylesheet">
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
   <body>
     <div class="header_wrapper">
-      <div class="logo">
-
-        <%= link_to "ShareSpace", root_url %> <!--#Link to needs to be changed-->
+      <div class="logo_left">
+        <%= link_to "SHARE", root_url %>
+      </div>
+      <div class="logo_right">
+        <%= link_to "SPACE", root_url%><!--#Link to needs to be changed-->
 
       </div>
       <div id="login_user_status">

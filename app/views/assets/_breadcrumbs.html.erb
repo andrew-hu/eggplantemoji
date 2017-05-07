@@ -1,0 +1,34 @@
+<div class="breadcrumbs">
+  <% if @current_folder #checking if we are under any folder %>
+      <%= link_to "Root", root_url, class: "breadcrumb_link" %>
+      <% @current_folder.ancestors.reverse.each do |folder| %>
+          » <%= link_to folder.name, browse_path(folder) ,class:"breadcrumb_link" %>
+      <% end %>
+      »
+      <div class="assets_menu">
+        <button onclick="dropMenu()" class="dropbtn"><%= @current_folder.name %> &#9660;</button>
+        <div id="assets_dropdown" class="dropdown-content">
+          <% if @current_folder %>
+              <%= link_to "Upload", new_sub_file_path(@current_folder) %>
+              <%= link_to "New Folder", new_sub_folder_path(@current_folder) %>
+          <% else %>
+              <%= link_to "Upload", new_asset_path %>
+              <%= link_to "New Folder", new_folder_path %>
+          <% end %>
+        </div>
+      </div>
+  <% else #if we are not under any folder%>
+      <div class="assets_menu">
+        <button onclick="dropMenu()" class="dropbtn">Root &#9660;</button>
+        <div id="assets_dropdown" class="dropdown-content">
+          <% if @current_folder %>
+              <%= link_to "Upload", new_sub_file_path(@current_folder) %>
+              <%= link_to "New Folder", new_sub_folder_path(@current_folder) %>
+          <% else %>
+              <%= link_to "Upload", new_asset_path %>
+              <%= link_to "New Folder", new_folder_path %>
+          <% end %>
+        </div>
+      </div>
+  <% end %>
+</div>
