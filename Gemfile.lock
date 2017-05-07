@@ -43,6 +43,7 @@ GEM
       activerecord (>= 3.0.0)
     arel (7.1.4)
     bcrypt (3.1.11)
+    bcrypt (3.1.11-x86-mingw32)
     builder (3.2.3)
     carrierwave (1.1.0)
       activemodel (>= 4.0.0)
@@ -285,9 +286,6 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.6)
     trollop (2.1.2)
-    turbolinks (5.0.1)
-      turbolinks-source (~> 5)
-    turbolinks-source (5.0.0)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     tzinfo-data (1.2017.2)
@@ -321,7 +319,6 @@ DEPENDENCIES
   sqlite3
   sqlite3-ruby
   thor (= 0.19.1)
-  turbolinks
   tzinfo-data
 
 BUNDLED WITH

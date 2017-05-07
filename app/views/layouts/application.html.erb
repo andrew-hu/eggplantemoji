@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <%= favicon_link_tag %>
-    <title><%= content_for?(:title) ? yield(:title) : "SHARESPACE" %></title>
-    <%= stylesheet_link_tag :application %>
-    <%= javascript_include_tag :application %>
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato" rel="stylesheet">
-    <%= csrf_meta_tag %>
-    <%= yield(:head) %>
-  </head>
+
+<<head>
+
+  <title>ShareSpace |<%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  <%= stylesheet_link_tag "application", "redmond/jquery-ui-1.8.9.custom" %>
+  <%= javascript_include_tag "jquery-1.4.4.min", "jquery-ui-1.8.9.custom.min" %>
+  <%= javascript_include_tag "application" %>
+
+  <!-- This is for preventing CSRF attacks. -->
+  <%= javascript_include_tag "jquery.Rails" %>
+
+
+  <%= csrf_meta_tag %>
+  <%= yield(:head) %>
+</head>
+
+
   <body>
     <div class="header_wrapper">
       <div class="logo_left">

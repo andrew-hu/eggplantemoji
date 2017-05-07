@@ -7,6 +7,14 @@ class AssetsController < ApplicationController
 
       #load current_user's folders
       @folders = current_user.folders.order("name desc")
+
+
+      #show only root folders (which have no parent folders)
+      @folders = current_user.folders.roots
+
+      #show only root files which has no "folder_id"
+      @assets = current_user.assets.where("folder_id is NULL").order("name")
+
     elsif user_signed_in? == false
       flash[:error1] = "Error. Try signing in or signing up to continue."
       flash[:error1]
@@ -96,5 +104,36 @@ class AssetsController < ApplicationController
 
 
 end
+
+
+#this handles ajax request for inviting others to share folders
+def share
+  #first, we need to separate the emails with the comma
+  email_addresses = params[:email_addresses].split(",")
+
+  email_addresses.each do |email_address|
+    #save the details in the ShareFolder table
+    @shared_folder = current_user.shared_folders.new
+    @shared_folder.folder_id = params[:folder_id]
+    @shared_folder.shared_email = email_address
+
+    #getting the shared user id right the owner the email has already signed up with ShareBox
+    #if not, the field "shared_user_id" will be left nil for now.
+    shared_user = User.find_by_email(email_address)
+    @shared_folder.shared_user_id = shared_user.id if shared_user
+
+    @shared_folder.message = params[:message]
+    @shared_folder.save
+
+    #now we need to send email to the Shared User
+  end
+
+  #since this action is mainly for ajax (javascript request), we'll respond with js file back (refer to share.js.erb)
+  respond_to do |format|
+    format.js {
+    }
+  end
+end
+
 
 

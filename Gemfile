@@ -13,7 +13,7 @@ gem 'sqlite3-ruby'
 gem 'tzinfo-data'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
-gem 'turbolinks'
+#gem 'turbolinks'
 #encryption
 gem 'bcrypt', platforms: :ruby
 #for user authentication
