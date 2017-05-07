@@ -17,3 +17,16 @@
 .byebug_history
 /Gemfile.lock
 /eggplantemoji_development
+
+*.env
+.idea/.generators
+.idea/.rakeTasks
+.idea/eggplantemoji.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/misc.xml
+eggplantemoji_development
+.idea/modules.xml
+.idea/runConfigurations/Production__eggplantemoji.xml
+*.xml
+*.xml

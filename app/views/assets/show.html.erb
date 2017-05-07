@@ -1,16 +1,39 @@
-<p id="notice"><%= notice %></p>
+<% content_for :container_id do %>
+  show
+<% end %>
+<% content_for :body_id do %>
+    id="show"
+<% end %>
 
-<p>
-  <strong>User:</strong>
-  <%= @asset.user_id %>
-</p>
+<div class="detail">
+  <ul style="list-style: none">
+    <li id="title"><% file = @asset.file_upload.to_s %>
+    <%= File.basename(file,File.extname(file)).capitalize %><br><br></li>
+    <li>Size: <%= number_to_human_size(@asset.file_size) %><br><br></li>
+    <li>Type: <%=@asset.content_type%></li>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @asset.file_upload %>
-</p>
+  </ul>
+</div>
+<div class="image-container">
+  <div class="show-image">
+    <p>
+      <% if @asset.content_type.include? 'image' %>
+          <%= image_tag @asset.file_upload.show %>
+      <% else %>
+          <img src="/images/blue-file-large.png" width="447 px" height="600 px" style="vertical-align: middle" >
+      <%end%>
+    </p>
+  </div>
+  <div class="show-options">
+    <%= link_to root_url do %><div class="file_manipulate">Back</div><% end %>
+    <a href="<%=  @asset.file_upload.url %>" download> <div class="file_manipulate">Download</div></a>
+    &nbsp
+    <%= link_to @asset, method: :delete, data: { confirm: 'Are you sure?' } do %><div class="file_manipulate">Delete</div><% end %>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_asset_path(@asset) %> |
-<%= link_to 'Back', assets_path %>
+
+
+
 
 
