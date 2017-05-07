@@ -10,6 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require dropzone/dropzone
  *= require_tree .
  *= require_self
  */
@@ -152,7 +153,7 @@ a {
     float:left;
 }
 .file_size_header, .file_size {
-    width: 5%;
+    width: 7%;
     float:left;
 }
 .file_last_updated_header, .file_last_updated {
@@ -192,7 +193,7 @@ image.file_icon{
 .file_manipulate_header, .file_manipulate{
     text-decoration: none;
     min-width: 5%;
-    margin: 0px 5px;
+    margin: 0 5px;
     height: 100%;
     float: left;
     text-align: center;

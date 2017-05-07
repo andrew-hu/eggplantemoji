@@ -22,6 +22,7 @@ development:
   encoding: utf8 
   reconnect: false
   database: eggplantemoji_development
+  timeout: 10000
   pool: 5
   username: primoriscruor
   password: Si1hou3tt3

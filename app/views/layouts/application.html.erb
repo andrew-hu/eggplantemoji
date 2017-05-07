@@ -9,7 +9,7 @@
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
-  <body>
+  <body <%= yield :body_id %>>
     <div class="header_wrapper">
       <div class="logo_left">
         <%= link_to "SHARE", root_url %>
@@ -31,7 +31,7 @@
         <% end %>
       </div>
     </div>
-    <div id="container">
+    <div id="container <%= yield :container_id %>" >
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
