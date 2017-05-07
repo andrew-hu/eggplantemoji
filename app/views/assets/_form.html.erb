@@ -1,5 +1,5 @@
-<%= form_for @asset  do |f| %>
-  <% if asset.errors.any? %>
+<%= form_for @asset, :html => {:class => 'dropzone form dz-clickable', :id => 'asset-dropzone'}  do |f| %>
+  <% if @asset.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(asset.errors.count, "error") %> prohibited this asset from being saved:</h2>
 
@@ -11,13 +11,11 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :file_upload %><br>
-    <%= f.file_field :file_upload%>
+    <input type="hidden" name="asset[file_upload]" id="asset_file_upload">
+
+    <%= f.hidden_field :folder_id %>
+  <div class="dz-default dz-message">
+    Click or Drop File Here!
   </div>
 
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

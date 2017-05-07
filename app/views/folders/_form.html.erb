@@ -1,0 +1,15 @@
+
+
+
+
+<%= form_for @folder do |f| %>
+
+    <%= f.error_messages %>
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <%= f.hidden_field :parent_id %>
+    <p><%= f.submit "Create Folder" %></p>
+<% end %>
+

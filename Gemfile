@@ -13,13 +13,25 @@ gem 'sqlite3-ruby'
 gem 'tzinfo-data'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
-gem 'turbolinks'
+gem 'sass', '~> 3.2.14'
+gem 'dropzonejs-rails'
 #encryption
 gem 'bcrypt', platforms: :ruby
 #for user authentication
 gem 'devise'
-
+# for aws cloud storage
+gem 'fog'
+# photo resizing
+gem 'mini_magick'
+# for env variables
+gem 'dotenv-rails', :group => :development
 #for layout and helpers generations
 gem "nifty-generators", :group => :development
 
 gem 'mocha', group: :test
+
+#For nested folders
+
+gem "acts_as_tree"
+
+

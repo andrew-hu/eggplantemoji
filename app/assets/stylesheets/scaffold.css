@@ -1,13 +1,18 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
 body {
   background-color: #fff;
   color: #333;
 }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Lato', helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  margin: 33px;
+  margin: 10px;
 }
 
 pre {
@@ -17,16 +22,14 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #0582ca
 }
 
 a:visited {
-  color: #666;
 }
 
 a:hover {
-  color: #fff;
-  background-color: #000;
+  background-color: transparent;
 }
 
 th {
@@ -82,3 +85,156 @@ div.actions {
 label {
   display: block;
 }
+
+.full-page{
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+}
+.full-screen-image-body{
+    font-family: 'Lato', helvetica, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+    overflow: hidden;
+    height: 100%;
+}
+.style {
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+}
+.section-vertical-align {
+    position: absolute;
+    top: 30%;
+}
+.logo_image{
+    display: block;
+    margin: auto;
+    max-height: 100px;
+}
+h1.splash-message{
+    font-family: 'Lato', helvetica, sans-serif;
+    font-size: 70px;
+    color: #FFFFFF;
+    line-height: 35px;
+}
+h3.splash-message{
+    font-family: 'Lato', helvetica, sans-serif;
+    font-size: 50px;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+
+.section-centered {
+    height: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+}
+
+.splash-header_wrapper {
+    width: 95%;
+    margin: 0 auto;
+    overflow:hidden;
+    padding:20px 5px;
+    position: absolute;
+}
+.splash-page-button {
+    background-color: #0582ca;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 26px;
+    text-decoration: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+a:visited.splash-page-button{
+    color: #FFFFFF;
+}
+a:hover.splash-page-button{
+    color: #FFFFFF;
+    background-color: #05acff;
+}
+a:visited.splash-log-in{
+    color: #FFFFFF;
+}
+a:hover.splash-log-in{
+    color: #05acff;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.splash-log-in{
+    text-decoration: none;
+}
+.splash-log-in{
+    color: #FFFFFF;
+    float: right;
+    font-size: large;
+    font-family: 'Lato', helvetica, sans-serif;
+}
+
+/* Dropdown Button */
+.dropbtn, .breadcrumb_link {
+    background-color: transparent;
+    color: #05acff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus , .breadcrumb_link:hover, .breadcrumb_link:focus{
+    color: #0582ca;
+    background-color: #f1f1f1;
+    outline: 0;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.assets_menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 14px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
