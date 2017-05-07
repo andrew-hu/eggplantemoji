@@ -10,14 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170226061908) do
+ActiveRecord::Schema.define(version: 20170506182020) do
 
   create_table "assets", force: :cascade do |t|
-    t.integer  "user_id"
+    t.integer "user_id"
+    t.text    "name"
+    t.text    "description"
+    t.text    "file_upload"
+    t.text    "created_at",   null: false
+    t.text    "updated_at",   null: false
+    t.integer "folder_id"
+    t.        "file_size"
+    t.        "content_type"
+    t.index ["folder_id"], name: "index_assets_on_folder_id"
+  end
+
+  create_table "folders", force: :cascade do |t|
     t.string   "name"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "parent_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "shared_folders", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "shared_email"
+    t.integer  "shared_user_id"
+    t.integer  "folder_id"
+    t.string   "message"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "users", force: :cascade do |t|

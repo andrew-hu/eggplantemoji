@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @folder.name %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @folder.parent_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @folder.user_id %>
+</p>
+
+
+<% if @current_folder %>
+    <li><%= link_to "New Folder", new_sub_folder_path(@current_folder) %></li>
+<% else %>
+    <li><%= link_to "New Folder", new_folder_path %></li>
+<% end %>
+
+<%= link_to 'Edit', edit_folder_path(@folder) %> |
+<%= link_to 'Back', folders_path %>
