@@ -48,8 +48,6 @@
 
       <%= link_to asset do %><div class="file_manipulate">Show</div><% end %>
       &nbsp
-      <%= link_to edit_asset_path(asset) do %><div class="file_manipulate">Edit</div><% end %>
-      &nbsp
       <a href="<%=  asset.file_upload.url %>" download> <div class="file_manipulate">Download</div></a>
       &nbsp
       <%= link_to asset, method: :delete, data: { confirm: 'Are you sure?' } do %><div class="file_manipulate">Delete</div><% end %>

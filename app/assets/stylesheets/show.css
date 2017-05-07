@@ -1,0 +1,54 @@
+.detail{
+    float: left;
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    text-align: left;
+    font-size: small;
+    font-family: 'lato', Sans-Serif;
+}
+#title{
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'lato', Sans-Serif;
+    height:100px;
+}
+.show-image{
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 90%;
+}
+.show-options{
+    display: block;
+    width: 100%;
+    height: 10%;
+}
+
+.image-container{
+    float: right;
+    display: inline-block;
+    height: 100%;
+    width: 85%;
+}
+
+li{
+    display: block;
+    width: 100%;
+
+}
+li a{
+    color: #FFFFFF;
+    background-color: #0582ca;
+}
+li a:hover{
+    background-color: #05acff;
+}
+
+div#container #show{
+    margin-top: 10px;
+}
+#show{
+    width:100%;
+    height:100%;
+}
