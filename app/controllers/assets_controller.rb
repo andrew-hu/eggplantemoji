@@ -1,5 +1,6 @@
 class AssetsController < ApplicationController
   before_action :authenticate_user!,:set_asset, only: [:show, :edit, :update, :destroy]
+
   # GET /assets
   def index
     if user_signed_in? == true
