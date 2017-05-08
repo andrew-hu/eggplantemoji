@@ -13,6 +13,7 @@
   <!-- Listing Shared Folders (the folders shared by others) -->
   <% @being_shared_folders.each do |folder| %>
       <div class="asset_details <%= folder.shared? ? 'shared_folder' : 'folder' %>" id="folder_<%= folder.id %>">
+        <div class="file_icon"><img src="/images/folder.png" width="20px" height="20 px" style="vertical-align: middle"></div>
         <div class="file_name"><%= link_to folder.name, browse_path(folder) %></div>
         <div class="file_size">-</div>
         <div class="file_last_updated">-</div>
