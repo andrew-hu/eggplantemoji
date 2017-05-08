@@ -142,7 +142,7 @@ class AssetsController < ApplicationController
     puts(@shared_folder.message) #
     puts(@shared_folder.shared_email) #
     puts(@shared_folder.shared_user_id) #test
-    @shared_folder
+    ##@shared_folder
     puts("Take a sad song and make it better") #test
     @shared_folder.save!
 
