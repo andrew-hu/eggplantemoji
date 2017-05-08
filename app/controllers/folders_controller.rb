@@ -69,7 +69,12 @@ class FoldersController < ApplicationController
   # PATCH/PUT /folders/1
   def update
     if @folder.update(folder_params)
-      redirect_to @folder, notice: 'Folder was successfully updated.'
+      flash[:notice] = "Folder was successfully updated."
+      if @folder.parent #checking if we have a parent folder on this one
+        redirect_to browse_path(@folder.parent)  #then we redirect to the parent folder
+      else
+        redirect_to root_url #if not, redirect back to home page
+      end
     else
       render :edit
     end
@@ -78,7 +83,12 @@ class FoldersController < ApplicationController
   # DELETE /folders/1
   def destroy
     @folder.destroy
-    redirect_to folders_url, notice: 'Folder was successfully destroyed.'
+    flash[:notice] = "Successfully deleted folder."
+    if @folder.parent #checking if we have a parent folder on this one
+      redirect_to browse_path(@folder.parent)
+    else
+      redirect_to root_url
+    end
   end
 
   private
