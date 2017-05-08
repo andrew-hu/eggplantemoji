@@ -134,9 +134,8 @@ h3.splash-message{
 }
 
 .section-centered {
-    height: 50%;
+    height: 100%;
     margin: 0 auto;
-    overflow: hidden;
     padding-left: 20px;
     padding-right: 20px;
     -webkit-transform: translate3d(0, 0, 0);
