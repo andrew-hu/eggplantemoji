@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20170506182020) do
     t.text    "created_at",   null: false
     t.text    "updated_at",   null: false
     t.integer "folder_id"
-    t.        "file_size"
-    t.        "content_type"
+    t.integer        "file_size"
+    t.text        "content_type"
     t.index ["folder_id"], name: "index_assets_on_folder_id"
   end
 
