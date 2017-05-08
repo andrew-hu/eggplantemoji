@@ -12,7 +12,7 @@
   <% @folders.each do |folder| %>
     <div class="asset_details folder">
       <div class="file_icon"><img src="/images/folder.png" width="20px" height="20 px" style="vertical-align: middle"></div>
-      <div class="file_name"><%= link_to folder.name, browse_path(folder) %></div>
+      <div class="file_name"><%= link_to truncate(folder.name.to_s, :length => 47, :omission => '...'), browse_path(folder) %></div>
       <div class="file_size"> - </div>
       <div class="file_last_updated"> - </div>
 
@@ -36,7 +36,7 @@
         <%end%>
       </div>
       <div class="file_name"><% file = asset.file_upload.to_s %>
-        <%= File.basename(file,File.extname(file)).capitalize %>
+        <%= truncate(File.basename(file,File.extname(file)).capitalize, :length => 47, :omission => '...') %>
       </div>
 
       <% if asset.file_size %>
