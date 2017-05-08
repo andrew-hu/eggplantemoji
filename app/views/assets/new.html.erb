@@ -7,6 +7,6 @@
   <% if @asset.folder %>
       <%= link_to "Back to '#{@asset.folder.name}' Folder", browse_path(@asset.folder) %>
   <% else %>
-      <%= link_to "Back", root_url %>
+      <%= link_to "Done!", root_url, class: "new-file-button" %>
   <% end %>
 </p>
