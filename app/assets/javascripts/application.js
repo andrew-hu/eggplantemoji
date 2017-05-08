@@ -42,8 +42,11 @@ $(function () {
                     //First button
                     "Share": function() {
                         //get the url to post the form data to
+                        var post_url = $("#invitation_form form").attr("action");
 
                         //serialize the form data and post it the url with ajax
+                        //alert($("#invitation_form form").serialize());
+                        $.post("http://localhost:3000/share",$("#invitation_form form").serialize(), null, "script");
 
                         return false;
                     },

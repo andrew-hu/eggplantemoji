@@ -129,7 +129,7 @@ class AssetsController < ApplicationController
     puts(email_address) #test
     ####email_addresses.each do |email_address|
       #save the details in the ShareFolder table
-      @shared_folder = current_user.shared_folders.new
+      @shared_folder = current_user.shared_folders.build
     puts("Hey Jude, don't make it bad") #test
       @shared_folder.folder_id = params[:folder_id]
       @shared_folder.shared_email = email_address
@@ -146,7 +146,7 @@ class AssetsController < ApplicationController
     puts(@shared_folder.shared_user_id) #test
     @shared_folder
     puts("Take a sad song and make it better") #test
-    @shared_folder.save
+    @shared_folder.save!
 
       #now we need to send email to the Shared User
     #####end
