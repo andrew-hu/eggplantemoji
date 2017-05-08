@@ -237,3 +237,7 @@ a div.file_manipulate{
     font-size:12px;
     color:#7F7F7F;
 }
+
+.ui-button {
+    border: 0px; !important
+}
