@@ -1,9 +1,10 @@
 $(function () {
-    //open the invitation form when a share button is clicked 
+    //open the invitation form when a share button is clicked
     $( ".share a" )
         .button()
         .click(function() {
             //assign this specific Share link element into a variable called "a"
+            console.log("Shared");
             var a = this;
 
             //First, set the title of the Dialog box to display the folder name

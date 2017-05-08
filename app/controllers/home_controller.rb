@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   def index
     if user_signed_in?
+
+      @being_shared_folders = current_user.shared_folders_by_others
       #show only root folders (which have no parent folders)
       @folders = current_user.folders.roots
 

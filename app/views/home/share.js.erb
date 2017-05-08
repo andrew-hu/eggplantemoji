@@ -8,7 +8,7 @@ $("#flash_notice").remove();
 $("#container").prepend("<div id='flash_notice'>Successfully shared the folder</div>");
 
 //Removing the css class 'folder'
-//$("#folder_<%= params[:folder_id] %>").removeClass("folder");
+$("#folder_<%= params[:folder_id] %>").removeClass("folder");
 
 //Adding the css class 'shared_folder'
-//$("#folder_<%= params[:folder_id] %>").addClass("shared_folder");
+$("#folder_<%= params[:folder_id] %>").addClass("shared_folder");
