@@ -76,7 +76,7 @@ class AssetsController < ApplicationController
     @asset = current_user.assets.find(params[:id])
     @asset.destroy
     respond_to do |format|
-      format.html { redirect_to assets_url, notice: 'File was successfully deleted.' }
+      format.html { redirect_to :back, notice: 'File was successfully deleted.' }
       format.json { head :no_content }
     end
   end
