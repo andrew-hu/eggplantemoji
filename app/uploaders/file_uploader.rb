@@ -48,7 +48,7 @@ class FileUploader < CarrierWave::Uploader::Base
    end
 
 def image?(new_file)
-  new_file.content_type.include? 'image'
+  defined? new_file.content_type.include? and new_file.content_type.include? 'image'
 end
 
   # Add a white list of extensions which are allowed to be uploaded.
