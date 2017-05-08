@@ -237,3 +237,23 @@ a.splash-log-in{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+.new-file-button {
+    background-color: #0582ca;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 26px;
+    text-decoration: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+a:visited.new-file-button{
+    color: #FFFFFF;
+}
+a:hover.new-file-button{
+    color: #FFFFFF;
+    background-color: #05acff;
+}
